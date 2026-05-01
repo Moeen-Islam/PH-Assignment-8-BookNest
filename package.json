@@ -1,0 +1,30 @@
+{
+  "name": "booknest-online-book-borrowing-platform",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "@better-auth/mongo-adapter": "latest",
+    "better-auth": "latest",
+    "daisyui": "latest",
+    "mongodb": "latest",
+    "next": "14.2.15",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "react-hot-toast": "latest",
+    "swiper": "latest"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "latest",
+    "@types/node": "latest",
+    "@types/react": "18.3.12",
+    "@types/react-dom": "18.3.1",
+    "tailwindcss": "latest",
+    "typescript": "latest"
+  },
+  "browserslist": "> 1%"
+}
