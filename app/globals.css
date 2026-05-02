@@ -1,0 +1,27 @@
+@import "tailwindcss";
+@plugin "daisyui";
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  color: #0f172a;
+  background:
+    radial-gradient(circle at top left, rgba(245, 158, 11, 0.18), transparent 34rem),
+    linear-gradient(135deg, #fff7ed 0%, #fffbeb 45%, #f8fafc 100%);
+}
+
+.book-shadow {
+  box-shadow: 14px 14px 0 rgba(15, 23, 42, 0.08);
+}
+
+.marquee-track {
+  animation: marquee 24s linear infinite;
+}
+
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
