@@ -13,7 +13,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en" data-theme="cupcake">
       <body>
-        <Toaster position="top-center" />
+        <Toaster position="top-right" />
         <Navbar />
         <main className="min-h-[calc(100vh-320px)]">{children}</main>
         <Footer />

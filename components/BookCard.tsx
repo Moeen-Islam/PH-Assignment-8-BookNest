@@ -1,20 +1,46 @@
 import Link from "next/link";
-import type { Book } from "@/types/book";
 
-export default function BookCard({ book, compact = false }: { book: Book; compact?: boolean }) {
+type Book = {
+  id: string;
+  title: string;
+  author: string;
+  description: string;
+  category: string;
+  available_quantity: number;
+  image_url: string;
+};
+
+type BookCardProps = {
+  book: Book;
+};
+
+export default function BookCard({ book }: BookCardProps) {
   return (
-    <article className="group overflow-hidden rounded-[1.7rem] border border-white/80 bg-white/85 shadow-xl shadow-amber-100/60 transition hover:-translate-y-1 hover:shadow-2xl">
-      <div className="relative">
-        <img src={book.image_url} alt={book.title} className={`w-full object-cover transition duration-300 group-hover:scale-105 ${compact ? "h-64" : "h-72"}`} />
-        <span className="badge badge-warning absolute left-4 top-4 font-bold">{book.category}</span>
+    <div className="group overflow-hidden rounded-[1.7rem] bg-white shadow-xl shadow-amber-100/70 transition duration-300 hover:-translate-y-2 hover:shadow-2xl">
+      <div className="relative flex h-[360px] items-center justify-center overflow-hidden bg-gradient-to-br from-amber-50 via-white to-slate-100 p-4">
+        <span className="absolute left-4 top-4 z-10 rounded-lg bg-amber-400 px-4 py-1 text-sm font-black text-slate-950 shadow">
+          {book.category}
+        </span>
+
+        <img
+          src={book.image_url}
+          alt={book.title}
+          className="h-full w-full rounded-2xl object-contain transition duration-500 group-hover:scale-105"
+        />
       </div>
-      <div className="p-5">
-        <h3 className="line-clamp-2 text-xl font-black text-slate-950">{book.title}</h3>
-        {!compact && <p className="mt-1 text-sm font-semibold text-slate-500">{book.author}</p>}
-        <Link href={`/books/${book.id}`} className="btn btn-neutral mt-5 w-full rounded-full">
-          {compact ? "Details" : "View Details"}
+
+      <div className="space-y-5 p-6">
+        <h3 className="line-clamp-2 min-h-[60px] text-2xl font-black leading-tight text-slate-950">
+          {book.title}
+        </h3>
+
+        <Link
+          href={`/books/${book.id}`}
+          className="btn w-full rounded-full border-none bg-slate-950 text-white hover:bg-amber-500 hover:text-slate-950"
+        >
+          Details
         </Link>
       </div>
-    </article>
+    </div>
   );
 }
