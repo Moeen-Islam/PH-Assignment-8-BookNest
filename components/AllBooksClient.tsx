@@ -48,7 +48,7 @@ export default function AllBooksClient({ books }: { books: Book[] }) {
 
         {filteredBooks.length > 0 ? (
           <div className="grid gap-6 sm:grid-cols-2 xl:grid-cols-3">
-            {filteredBooks.map((book) => <BookCard key={book.id} book={book} compact />)}
+            {filteredBooks.map((book) => <BookCard key={book.id} book={book}/>)}
           </div>
         ) : (
           <div className="rounded-[1.7rem] bg-white/85 p-10 text-center shadow-xl">
