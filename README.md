@@ -1,52 +1,86 @@
-# BookNest - Online Book Borrowing Platform
+# 📚 BookNest — Online Book Borrowing Platform
 
-A responsive online book borrowing platform built with Next.js, Tailwind CSS, DaisyUI, BetterAuth, MongoDB, and SwiperJS.
+## 🌐 Live URL
 
-## Checklist coverage
+🔗 [Visit BookNest Live](https://book-nest-moeen-islam.vercel.app/)
 
-- Responsive navbar with Home, All Books, My Profile
-- Conditional navbar UI: Login when logged out; user name and Logout when logged in
-- Custom footer with social links and Contact Us
-- Local JSON data with 12 book objects
-- Home banner with "Find Your Next Read" and Browse Now button
-- Marquee with new arrivals and membership discount text
-- Featured Books section showing top 4 books
-- Two extra home sections: Why BookNest and Reader Picks carousel
-- Email/password login
-- Email/password registration with Name, Email, Photo URL, Password
-- Google social login button
-- All Books search by title
-- Category sidebar filter: All, Story, Tech, Science
-- Private Book Details route
-- Borrow This Book button with confirmation toast
-- Private My Profile route showing user information
-- Update Information route with Name and Image URL form
-- Environment variable based config
-- BetterAuth with MongoDB adapter
-- SwiperJS package used for Reader Picks carousel
+---
 
-## Setup
+## 📖 Project Purpose
+
+**BookNest** is a modern online book borrowing platform designed to digitize the traditional library experience. Users can browse a collection of books, search by title, filter books by category, view detailed book information, and borrow books after authentication.
+
+The project focuses on a clean user experience, secure authentication, responsive design, and smooth navigation using **Next.js**, **BetterAuth**, **MongoDB**, **Tailwind CSS**, and **DaisyUI**.
+
+---
+
+## ✨ Key Features
+
+### 🔐 Authentication
+
+- User registration with name, email, photo URL, and password
+- User login with email and password
+- Google social login
+- Secure authentication handled with BetterAuth
+- Protected/private routes for logged-in users only
+
+### 📚 Book Browsing
+
+- Display all books from JSON data
+- Search books by title
+- Filter books by category:
+  - Story
+  - Tech
+  - Science
+- View detailed information for each book
+- Borrow book action with confirmation toast
+
+### 👤 User Profile
+
+- Private profile page
+- Display logged-in user information
+- Update user name and profile image
+
+### 🏠 Home Page
+
+- Modern hero/banner section
+- Marquee announcement section
+- Featured books section
+- Extra informational sections
+- Reader-friendly responsive design
+
+### 📱 Responsive Design
+
+- Fully responsive for mobile, tablet, and desktop
+- Clean card layout
+- Modern navbar and footer
+- Smooth UI built with Tailwind CSS and DaisyUI
+
+---
+
+## 🛠️ Technologies Used
+
+- **Next.js**
+- **React**
+- **Tailwind CSS**
+- **DaisyUI**
+- **BetterAuth**
+- **MongoDB**
+- **SwiperJS**
+- **React Hot Toast**
+- **Vercel**
+
+---
+
+## 📦 NPM Packages Used
 
 ```bash
-npm install
-cp .env.example .env.local
-npm run dev
-```
-
-Fill `.env.local` before running.
-
-For Google OAuth, add this authorized redirect URI in Google Cloud Console:
-
-```txt
-http://localhost:3000/api/auth/callback/google
-```
-
-For production, replace localhost with your deployed domain and set `BETTER_AUTH_URL` to the same domain.
-
-## Notes
-
-- Passwords must be at least 8 characters.
-- Email verification and forgot password are intentionally not implemented.
-- Registration redirects users to the login page because `autoSignIn` is set to `false` in `lib/auth.ts`.
-- Book data is local JSON data in `data/books.json`.
-- Auth users and sessions are stored in MongoDB by BetterAuth.
+next
+react
+react-dom
+tailwindcss
+daisyui
+better-auth
+mongodb
+swiper
+react-hot-toast
