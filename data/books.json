@@ -1,0 +1,110 @@
+[
+  {
+    "id": "1",
+    "title": "The Midnight Library",
+    "author": "Matt Haig",
+    "description": "A thoughtful story about choices, regret, and the many lives one person could have lived.",
+    "category": "Story",
+    "available_quantity": 6,
+    "image_url": "https://placehold.co/400x600/0f172a/fde68a?text=Midnight+Library"
+  },
+  {
+    "id": "2",
+    "title": "Clean Code",
+    "author": "Robert C. Martin",
+    "description": "A practical guide to writing readable, maintainable, and professional software.",
+    "category": "Tech",
+    "available_quantity": 4,
+    "image_url": "https://placehold.co/400x600/1e293b/bbf7d0?text=Clean+Code"
+  },
+  {
+    "id": "3",
+    "title": "A Brief History of Time",
+    "author": "Stephen Hawking",
+    "description": "An accessible journey through cosmology, black holes, time, and the universe.",
+    "category": "Science",
+    "available_quantity": 5,
+    "image_url": "https://placehold.co/400x600/312e81/c4b5fd?text=History+of+Time"
+  },
+  {
+    "id": "4",
+    "title": "The Alchemist",
+    "author": "Paulo Coelho",
+    "description": "A symbolic adventure about dreams, destiny, and personal legend.",
+    "category": "Story",
+    "available_quantity": 8,
+    "image_url": "https://placehold.co/400x600/7c2d12/fed7aa?text=The+Alchemist"
+  },
+  {
+    "id": "5",
+    "title": "You Don't Know JS Yet",
+    "author": "Kyle Simpson",
+    "description": "A deep technical exploration of JavaScript fundamentals and advanced concepts.",
+    "category": "Tech",
+    "available_quantity": 3,
+    "image_url": "https://placehold.co/400x600/111827/facc15?text=You+Dont+Know+JS"
+  },
+  {
+    "id": "6",
+    "title": "The Selfish Gene",
+    "author": "Richard Dawkins",
+    "description": "A science classic explaining evolution through the perspective of genes.",
+    "category": "Science",
+    "available_quantity": 7,
+    "image_url": "https://placehold.co/400x600/064e3b/a7f3d0?text=Selfish+Gene"
+  },
+  {
+    "id": "7",
+    "title": "Atomic Habits",
+    "author": "James Clear",
+    "description": "A practical guide to building better habits and improving life through tiny changes.",
+    "category": "Story",
+    "available_quantity": 10,
+    "image_url": "https://placehold.co/400x600/3b0764/e9d5ff?text=Atomic+Habits"
+  },
+  {
+    "id": "8",
+    "title": "Designing Data-Intensive Applications",
+    "author": "Martin Kleppmann",
+    "description": "A detailed guide to scalable systems, distributed data, reliability, and maintainability.",
+    "category": "Tech",
+    "available_quantity": 2,
+    "image_url": "https://placehold.co/400x600/0c4a6e/bae6fd?text=Data+Systems"
+  },
+  {
+    "id": "9",
+    "title": "Cosmos",
+    "author": "Carl Sagan",
+    "description": "A poetic scientific journey through space, life, and human curiosity.",
+    "category": "Science",
+    "available_quantity": 6,
+    "image_url": "https://placehold.co/400x600/581c87/f5d0fe?text=Cosmos"
+  },
+  {
+    "id": "10",
+    "title": "The Hobbit",
+    "author": "J.R.R. Tolkien",
+    "description": "A fantasy adventure following Bilbo Baggins through treasure, danger, and courage.",
+    "category": "Story",
+    "available_quantity": 9,
+    "image_url": "https://placehold.co/400x600/14532d/bef264?text=The+Hobbit"
+  },
+  {
+    "id": "11",
+    "title": "Introduction to Algorithms",
+    "author": "Thomas H. Cormen",
+    "description": "A comprehensive textbook on algorithms, data structures, and computational thinking.",
+    "category": "Tech",
+    "available_quantity": 4,
+    "image_url": "https://placehold.co/400x600/1f2937/c7d2fe?text=Algorithms"
+  },
+  {
+    "id": "12",
+    "title": "The Gene",
+    "author": "Siddhartha Mukherjee",
+    "description": "A powerful history of genetics and how heredity shapes life.",
+    "category": "Science",
+    "available_quantity": 5,
+    "image_url": "https://placehold.co/400x600/164e63/a5f3fc?text=The+Gene"
+  }
+]
